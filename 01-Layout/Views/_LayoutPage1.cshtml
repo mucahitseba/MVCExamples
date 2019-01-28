@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style type="text/css">
+        .menuler {
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            float:right;
+            text-align:center;
+        }
+        .sagdanboşluk{
+            margin-right:5px;
+
+        }
+        body{
+            background-color:black;
+        }
+    </style>
+    @RenderSection("style",false)
+</head>
+<body>
+    <div style="width:100%;height:100px;background-color:darkslateblue">
+        <div class="menuler" ><a href="@Url.Action("İletisim")">iletişim</a></div>
+        <div class="menuler sagdanboşluk", ><a href="@Url.Action("Hakkimizda")">hakkimizda</a></div>
+        <div class="menuler sagdanboşluk" ><a href="@Url.Action("Index")">anasayfa</a></div>
+    </div>
+    <div>
+
+        @RenderBody()
+    </div>
+    <div style="width:100%;height:100px;background-color:darkslateblue">
+        footer
+    </div>
+</body>
+</html>
