@@ -24,7 +24,7 @@
             color:aquamarine;
         }
     </style>
-    @RenderSection("style",false)
+    @RenderSection("style", false)
 </head>
 <body>
     <div style="width:100%;height:100px;background-color:darkslateblue">
@@ -33,9 +33,10 @@
         <div class="menuler sagdanboşluk" ><a href="@Url.Action("Index")">anasayfa</a></div>
     </div>
     <div>
-
+        @Html.Partial("~/Views/Home/_partialVitrin.cshtml")
         @RenderBody()
     </div>
+   
     <div style="width:100%;height:100px;background-color:darkslateblue">
         @Html.Partial("_partialAltBilgi")
     </div>

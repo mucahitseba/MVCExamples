@@ -123,6 +123,8 @@
     <Content Include="Views\Home\Hakkimizda.cshtml" />
     <Content Include="Views\Home\İletisim.cshtml" />
     <Content Include="Views\Shared\_partialAltBilgi.cshtml" />
+    <Content Include="Views\Home\_partialVitrin.cshtml" />
+    <Content Include="Views\Home\_partialUrunListesi.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
