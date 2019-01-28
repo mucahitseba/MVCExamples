@@ -19,6 +19,10 @@
         body{
             background-color:black;
         }
+        a:hover{
+            background-color:blueviolet;
+            color:aquamarine;
+        }
     </style>
     @RenderSection("style",false)
 </head>
@@ -33,7 +37,7 @@
         @RenderBody()
     </div>
     <div style="width:100%;height:100px;background-color:darkslateblue">
-        footer
+        @Html.Partial("_partialAltBilgi")
     </div>
 </body>
 </html>
