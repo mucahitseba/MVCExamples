@@ -8,8 +8,8 @@ namespace MVC_Examples.Controllers
 {
     public class UserController : Controller
     {
-        // GET: User
-        public ActionResult Register()
+        [HttpGet]
+        public ActionResult RegisterUser()
         {
             return View();
         }
